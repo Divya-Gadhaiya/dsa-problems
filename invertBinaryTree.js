@@ -7,6 +7,7 @@
  * }
  */
 /**
+ *@function invertTree- invert the binary tree
  * @param {TreeNode} root
  * @return {TreeNode}
  */
