@@ -9,6 +9,7 @@
  * @param {string} t
  * @return {boolean}
  */
+//Approach 1
 var isSubsequence = function(s, t) {
     const index = [];
     let start = 0;
@@ -25,3 +26,11 @@ var isSubsequence = function(s, t) {
         }
     });
 };
+//Approach 2
+var isSubsequence = function(s, t) {
+    t = t.split('');
+    s = s.split('');
+    t.forEach(char => s[0] === char ? s.shift() : null)
+    return !s.length
+};
+
